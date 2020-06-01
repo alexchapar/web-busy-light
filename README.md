@@ -20,7 +20,7 @@ Since I had a lot of old (but still "working") and obsolete devices (Windows Sur
 
 ## How to use it
 You can use it in several ways. 
-- To make it as simple as possible, I published the code under this url http://workfromhome.capricehosting.com and everyone can use it without any problem.
+- To make it as simple as possible, I published the code under this url http://workfromhome.capricehosting.com ("https" is also available :P) and everyone can use it without any problem.
 - For those who want a better "control" or even fair changes, you can clone this repo and copy the whole thing to the place you want, as long as it is possible for your web browser to run the html page.
 
 When loading, the status is always "available" (green). You can change your status manually by clicking on the screen and choose one of the 5 statuses.
@@ -28,7 +28,10 @@ When loading, the status is always "available" (green). You can change your stat
 ## Contribution
 You can submit problems, questions or even PR, if you want to propose new features ;)
 
+## Some Thanks
+Thank to [OpenMoji](https://openmoji.org/library/#group=smileys-emotion) for the emoji that I used and also thank to thank to [Favicon](https://favicon.io/emoji-favicons/necktie/)
+
 ## Donations
-If you think this code/project is useful for you, I encourage you to make a donation to a foundation that I hold dear:  [The Prader-Willi Syndrome Research Foundation (PWS)] (https://www.fpwr.ca/donate/)
+If you think this code/project is useful for you, I encourage you to make a donation to a foundation that I hold dear: [The Prader-Willi Syndrome Research Foundation (PWS)](https://www.fpwr.ca/donate/)
 
 Prader-Willi Syndrome (PWS) is a rare genetic disorder, characterized at birth by severe hypotonia, growth disorders, followed by the onset of hyperphagia (i.e. always hungry) during childhood (usually between 2 and 8 years of age), which, without proper management, can lead to the development of morbid obesity. [wikipedia]
