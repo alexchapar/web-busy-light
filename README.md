@@ -31,7 +31,7 @@ You can submit problems, questions or even PR, if you want to propose new featur
 ## Some Thanks
 Thank to [OpenMoji](https://openmoji.org/library/#group=smileys-emotion) for the emoji that I used and also thank to thank to [Favicon](https://favicon.io/emoji-favicons/necktie/)
 
-## Donations
+## Donations/Sponsor
 If you think this code/project is useful for you, I encourage you to make a donation to a foundation that I hold dear: [The Prader-Willi Syndrome Research Foundation (PWS)](https://www.fpwr.ca/donate/)
 
 Prader-Willi Syndrome (PWS) is a rare genetic disorder, characterized at birth by severe hypotonia, growth disorders, followed by the onset of hyperphagia (i.e. always hungry) during childhood (usually between 2 and 8 years of age), which, without proper management, can lead to the development of morbid obesity. [wikipedia]
