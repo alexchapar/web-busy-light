@@ -5,16 +5,16 @@ It can help your child or any other loved one or member of your team to know wha
 
 ## Information
 This project is a website that allows others to view your availability on a "busy light" basis.It is a very simple development for 5 possible states (color and emoji):
-green: Working but AVAILABLE
-blue: QUICK, I'm working.
-purple: My BRAIN is at work
-red: I'm on a MEETING
-white: I DO NOT WORK 
+- green: Working but AVAILABLE
+- blue: QUICK, I'm working
+- purple: My BRAIN is at work
+- red: I'm on a MEETING
+- white: I DO NOT WORK 
 
 ## Why
 With COVID-19, like many, I work from home. It's not easy for all our loved ones to know if and when they can come and talk to us during the day. And, let's face it, whenever they need us, it's during a SUPER IMPORTANT :D meeting. So we had to find a simple, visual and efficient way. 
 
-Searching on the web, I found several "devices" that allowed us to give a "light status" based on our availability on "Microsoft Teams" (or any other of the kind).  I also found someone who presented how to build his own system with a raspberry Pi. This is very interesting for a Geek or a "Techno Guy"... And it costs money... What we have less is time...
+Searching on the web, I found several "devices" that allowed us to give a "light status" based on our availability on "Microsoft Teams" (or any other of the kind).  I also found someone who presented how to build his own system with a raspberry Pi. This is very interesting for a Geek or a "Techno Guy"... And it costs money... Which we have less this time...
 
 Since I had a lot of old (but still "working") and obsolete devices (Windows Surface RT, Android Telephones, etc. ), I thought I could give them a use during this period by using their web browser :) 
 
