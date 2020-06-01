@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- version : 0.1.0 -->
 <title>Am I Available ?</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -145,9 +146,12 @@ body {
 }
 .infoHowTo {
   background-color: transparent;
-  color: darkorange;
+  color: #000000;
   font-weight: bolder;
   z-index:10;
+}
+.infoHowTo a {
+  color: #000000;
 }
 .topLeft {
   position: fixed;
@@ -197,6 +201,19 @@ body {
   }
   .sidenav a {
     font-size: 2.9em;
+	padding: 0.8em 0.4em;
+	margin-top: 0.2em;
+  }
+}
+
+@media screen 
+   and (max-width: 450px)   {
+
+  .sidenav {
+    padding-top: 0px;
+  }
+  .sidenav a {
+    font-size: 2.5em;
 	padding: 0.8em 0.4em;
 	margin-top: 0.2em;
   }
@@ -272,9 +289,9 @@ user-select: none; /* Standard */
 
 	</div>
 	
-	<div class="infoHowTo topLeft xlarge">Tap or click anywhere...</div>
-	<div class="infoHowTo btmLeft">2020 &copy; <a href="http://www.caprice.ca">CAPRICE IT Services</a></div>
-	<div class="infoHowTo topRight">email : <a href="mailto:info@caprice.ca">info@caprice.ca</a></div>
-	<div class="infoHowTo btmRight xlarge">Tap or click anywhere...</div>
+	<div class="infoHowTo topLeft xlarge">Update status...</div>
+	<div class="infoHowTo btmLeft">&copy; GitHub : <a href="https://github.com/alexchapar/web-busy-light" target="_blank">alexchapar/web-busy-light</a></div>
+	<div class="infoHowTo topRight">Please donate to <a href="https://www.fpwr.ca/donate/" target="_blank">Prader-Willi Syndrom</a></div>
+	<div class="infoHowTo btmRight xlarge">...click anywhere</div>
 </body>
 </html> 
