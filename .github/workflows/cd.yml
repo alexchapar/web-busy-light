@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CD
 
 # Controls when the action will run.
 on:
@@ -41,7 +41,7 @@ jobs:
           # ssh remote user
           user: ${{ secrets.SSH_REMOTE_USER }}
           # content of ssh private key. ex raw content of ~/.ssh/id_rsa
-          key: ${{ secrets.SSH_REMOTE_KEY }} # optional
+          # key: ${{ secrets.SSH_REMOTE_KEY }} # optional
           # ssh remote password
           pass: ${{ secrets.SSH_REMOTE_PASS }} # optional
           # connection timeout to remote host
