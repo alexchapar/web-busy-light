@@ -13,10 +13,12 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
+  # This workflow contains a single job called "publish"
+  publish:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    name: Deploy to ${{ secrets.HOST_NAME }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -30,8 +32,8 @@ jobs:
         env:
           DEPLOY_STARTS: "Starting the deployment"
           DEPLOY_ENDS: "Deployement is now complete"
-          LIVE_FOLDER: "/home/${{ secrets.SSH_REMOTE_USER }}/${{ secrets.SSH_REMOTE_HOST }}"
-          STAGING_FOLDER: "/home/${{ secrets.SSH_REMOTE_USER }}/staging.${{ secrets.SSH_REMOTE_HOST }}"
+          LIVE_FOLDER: "/home/${{ secrets.SSH_REMOTE_USER }}/${{ secrets.HOST_NAME }}"
+          STAGING_FOLDER: "/home/${{ secrets.SSH_REMOTE_USER }}/staging.${{ secrets.HOST_NAME }}"
           TEMP_FOLDER: "/home/${{ secrets.SSH_REMOTE_USER }}/TEMP"
         with:
           # ssh remote host
