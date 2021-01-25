@@ -68,7 +68,6 @@ jobs:
           check_name: Test Results - Staging
           github_token: ${{ secrets.GITHUB_TOKEN }}
           files: testim-report.xml
-          log_level: DEBUG
 
   deploy:
     name: Production
@@ -124,4 +123,3 @@ jobs:
           check_name: Test Results - Production
           github_token: ${{ secrets.GITHUB_TOKEN }}
           files: testim-report.xml
-          log_level: DEBUG
