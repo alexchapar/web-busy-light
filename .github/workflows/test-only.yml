@@ -1,0 +1,71 @@
+name: Running UI Tests only
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  FOLDER: "/home/${{ secrets.SSH_REMOTE_USER }}/${{ secrets.HOST_NAME }}"
+  TEMP_FOLDER: "/home/${{ secrets.SSH_REMOTE_USER }}/TEMP"
+  STAGING_FOLDER: "/home/${{ secrets.SSH_REMOTE_USER }}/staging.${{ secrets.HOST_NAME }}"
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  stage-tests:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    name: Staging and testing
+
+    environment: staging
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Testim CLI
+        run: |
+            npm add @testim/testim-cli
+            ./node_modules/.bin/testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
+
+      - name: Publish Test Results
+        if: always()
+        uses: EnricoMi/publish-unit-test-result-action@v1.7
+        with:
+          check_name: Staging Test Results
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          files: testim-report.xml
+          log_level: DEBUG
+
+  deploy:
+    name: Production
+    needs: stage-tests
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    environment: production
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Testim CLI
+        run: |
+            npm add @testim/testim-cli
+            ./node_modules/.bin/testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
+
+      - name: Publish Test Results
+        if: always()
+        uses: EnricoMi/publish-unit-test-result-action@v1.7
+        with:
+          check_name: Test Results
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          files: testim-report.xml
+          log_level: DEBUG
