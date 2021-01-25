@@ -81,7 +81,7 @@ jobs:
       - name: Testim CLI
         run: |
             npm add @testim/testim-cli
-            ./node_modules/.bin/testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
+            ./node_modules/.bin/testim --token ${{ secrets.TESTIMIO_TOKEN }} --project ${{ secrets.TESTIMIO_PROJECT }} --grid ${{ secrets.TESTIMIO_GRIDNAME }} --report-file testim-report.xml --base-url ${{ secrets.TESTIMIO_BASEURL }}
 
       - name: Publish Test Results
         if: always()
@@ -154,7 +154,7 @@ jobs:
       - name: Testim CLI
         run: |
             npm add @testim/testim-cli
-            ./node_modules/.bin/testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
+            ./node_modules/.bin/testim --token ${{ secrets.TESTIMIO_TOKEN }} --project ${{ secrets.TESTIMIO_PROJECT }} --grid ${{ secrets.TESTIMIO_GRIDNAME }} --report-file testim-report.xml --base-url ${{ secrets.TESTIMIO_BASEURL }}
 
       - name: Publish Test Results
         if: always()
