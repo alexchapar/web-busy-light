@@ -61,22 +61,27 @@ jobs:
           #   rm -rdf $TEMP_FOLDER
           #   echo $DEPLOY_ENDS
 
+      # - name: Testim CLI
+      #   # You may pin to the exact commit or the version.
+      #   # uses: instinctstudios/testim-cli-gh-action@776599aa28d741b1a2e45ac6c7ec524a988dbbcf
+      #   uses: instinctstudios/testim-cli-gh-action@v0.6.0
+      #   with:
+      #     # Testim auth token
+      #     token: ${{ secrets.TESTIMIO_TOKEN }}
+      #     # Project ID
+      #     project: ${{ secrets.TESTIMIO_PROJECT }}
+      #     # Grid to run the tests on
+      #     grid: ${{ secrets.TESTIMIO_GRIDNAME }} # default is Testim-Grid
+      #     # # ReportFile (To Be Validated)
+      #     # report-file: testim-report.xml
+      #     # # BaseURL (To Be Validated)
+      #     # base-url: https://${{ secrets.HOST_NAME }}
+      #     suite: 'All Tests --base-url https://${{ secrets.HOST_NAME }}'
+
       - name: Testim CLI
-        # You may pin to the exact commit or the version.
-        # uses: instinctstudios/testim-cli-gh-action@776599aa28d741b1a2e45ac6c7ec524a988dbbcf
-        uses: instinctstudios/testim-cli-gh-action@v0.6.0
-        with:
-          # Testim auth token
-          token: ${{ secrets.TESTIMIO_TOKEN }}
-          # Project ID
-          project: ${{ secrets.TESTIMIO_PROJECT }}
-          # Grid to run the tests on
-          grid: ${{ secrets.TESTIMIO_GRIDNAME }} # default is Testim-Grid
-          # # ReportFile (To Be Validated)
-          # report-file: testim-report.xml
-          # # BaseURL (To Be Validated)
-          # base-url: https://${{ secrets.HOST_NAME }}
-          suite: 'All Tests --base-url https://${{ secrets.HOST_NAME }}'
+        run: |
+            npm add @testim/testim-cli
+            testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
 
       - name: Publish Test Results
         if: always()
@@ -129,22 +134,27 @@ jobs:
             mv -f $TEMP_FOLDER $STAGING_FOLDER
             rm -rdf $TEMP_FOLDER
 
+      # - name: Testim CLI
+      #   # You may pin to the exact commit or the version.
+      #   # uses: instinctstudios/testim-cli-gh-action@776599aa28d741b1a2e45ac6c7ec524a988dbbcf
+      #   uses: instinctstudios/testim-cli-gh-action@v0.6.0
+      #   with:
+      #     # Testim auth token
+      #     token: ${{ secrets.TESTIMIO_TOKEN }}
+      #     # Project ID
+      #     project: ${{ secrets.TESTIMIO_PROJECT }}
+      #     # Grid to run the tests on
+      #     grid: ${{ secrets.TESTIMIO_GRIDNAME }} # default is Testim-Grid
+      #     # # ReportFile (To Be Validated)
+      #     # report-file: testim-report.xml
+      #     # # BaseURL (To Be Validated)
+      #     # base-url: https://${{ secrets.HOST_NAME }}
+      #     suite: 'All Tests --base-url https://${{ secrets.HOST_NAME }}'
+
       - name: Testim CLI
-        # You may pin to the exact commit or the version.
-        # uses: instinctstudios/testim-cli-gh-action@776599aa28d741b1a2e45ac6c7ec524a988dbbcf
-        uses: instinctstudios/testim-cli-gh-action@v0.6.0
-        with:
-          # Testim auth token
-          token: ${{ secrets.TESTIMIO_TOKEN }}
-          # Project ID
-          project: ${{ secrets.TESTIMIO_PROJECT }}
-          # Grid to run the tests on
-          grid: ${{ secrets.TESTIMIO_GRIDNAME }} # default is Testim-Grid
-          # # ReportFile (To Be Validated)
-          # report-file: testim-report.xml
-          # # BaseURL (To Be Validated)
-          # base-url: https://${{ secrets.HOST_NAME }}
-          suite: 'All Tests --base-url https://${{ secrets.HOST_NAME }}'
+        run: |
+            npm add @testim/testim-cli
+            testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
 
       - name: Publish Test Results
         if: always()
