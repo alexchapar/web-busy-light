@@ -29,59 +29,59 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: ssh-scp-ssh-pipelines
-        # You may pin to the exact commit or the version.
-        # uses: cross-the-world/ssh-scp-ssh-pipelines@e1c2bf0c8d7813a3243dc649b6af178262a834e9
-        uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.2
-        # env:
-        with:
-          # ssh remote host
-          host: ${{ secrets.SSH_REMOTE_HOST }}
-          # ssh remote port
-          port: ${{ secrets.SSH_REMOTE_PORT }} # optional, default is 22
-          # ssh remote user
-          user: ${{ secrets.SSH_REMOTE_USER }}
-          # content of ssh private key. ex raw content of ~/.ssh/id_rsa
-          # key: ${{ secrets.SSH_REMOTE_KEY }} # optional
-          # ssh remote password
-          pass: ${{ secrets.SSH_REMOTE_PASS }} # optional
-          # connection timeout to remote host
-          connect_timeout: 20s # optional, default is 30s
-          # execute pre-commands before scp
-          first_ssh: | # optional
-            mkdir -p $FOLDER
-          # scp from local to remote
-          scp: | # optional
-            './src/*' => $FOLDER
-          # execute post-commands after scp
-          # last_ssh: | # optional
-          #   mv -f $FOLDER $TEMP_FOLDER
-          #   mv -f $STAGING_FOLDER $FOLDER
-          #   mv -f $TEMP_FOLDER $STAGING_FOLDER
-          #   rm -rdf $TEMP_FOLDER
-          #   echo $DEPLOY_ENDS
-
-      # - name: Testim CLI
+      # - name: ssh-scp-ssh-pipelines
       #   # You may pin to the exact commit or the version.
-      #   # uses: instinctstudios/testim-cli-gh-action@776599aa28d741b1a2e45ac6c7ec524a988dbbcf
-      #   uses: instinctstudios/testim-cli-gh-action@v0.6.0
+      #   # uses: cross-the-world/ssh-scp-ssh-pipelines@e1c2bf0c8d7813a3243dc649b6af178262a834e9
+      #   uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.2
+      #   # env:
       #   with:
-      #     # Testim auth token
-      #     token: ${{ secrets.TESTIMIO_TOKEN }}
-      #     # Project ID
-      #     project: ${{ secrets.TESTIMIO_PROJECT }}
-      #     # Grid to run the tests on
-      #     grid: ${{ secrets.TESTIMIO_GRIDNAME }} # default is Testim-Grid
-      #     # # ReportFile (To Be Validated)
-      #     # report-file: testim-report.xml
-      #     # # BaseURL (To Be Validated)
-      #     # base-url: https://${{ secrets.HOST_NAME }}
-      #     suite: 'All Tests --base-url https://${{ secrets.HOST_NAME }}'
+      #     # ssh remote host
+      #     host: ${{ secrets.SSH_REMOTE_HOST }}
+      #     # ssh remote port
+      #     port: ${{ secrets.SSH_REMOTE_PORT }} # optional, default is 22
+      #     # ssh remote user
+      #     user: ${{ secrets.SSH_REMOTE_USER }}
+      #     # content of ssh private key. ex raw content of ~/.ssh/id_rsa
+      #     # key: ${{ secrets.SSH_REMOTE_KEY }} # optional
+      #     # ssh remote password
+      #     pass: ${{ secrets.SSH_REMOTE_PASS }} # optional
+      #     # connection timeout to remote host
+      #     connect_timeout: 20s # optional, default is 30s
+      #     # execute pre-commands before scp
+      #     first_ssh: | # optional
+      #       mkdir -p $FOLDER
+      #     # scp from local to remote
+      #     scp: | # optional
+      #       './src/*' => $FOLDER
+      #     # execute post-commands after scp
+      #     # last_ssh: | # optional
+      #     #   mv -f $FOLDER $TEMP_FOLDER
+      #     #   mv -f $STAGING_FOLDER $FOLDER
+      #     #   mv -f $TEMP_FOLDER $STAGING_FOLDER
+      #     #   rm -rdf $TEMP_FOLDER
+      #     #   echo $DEPLOY_ENDS
+
+      # # - name: Testim CLI
+      # #   # You may pin to the exact commit or the version.
+      # #   # uses: instinctstudios/testim-cli-gh-action@776599aa28d741b1a2e45ac6c7ec524a988dbbcf
+      # #   uses: instinctstudios/testim-cli-gh-action@v0.6.0
+      # #   with:
+      # #     # Testim auth token
+      # #     token: ${{ secrets.TESTIMIO_TOKEN }}
+      # #     # Project ID
+      # #     project: ${{ secrets.TESTIMIO_PROJECT }}
+      # #     # Grid to run the tests on
+      # #     grid: ${{ secrets.TESTIMIO_GRIDNAME }} # default is Testim-Grid
+      # #     # # ReportFile (To Be Validated)
+      # #     # report-file: testim-report.xml
+      # #     # # BaseURL (To Be Validated)
+      # #     # base-url: https://${{ secrets.HOST_NAME }}
+      # #     suite: 'All Tests --base-url https://${{ secrets.HOST_NAME }}'
 
       - name: Testim CLI
         run: |
             npm add @testim/testim-cli
-            testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
+            ./node_modules/.bin/testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
 
       - name: Publish Test Results
         if: always()
@@ -105,56 +105,56 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: ssh-scp-ssh-pipelines
-        # You may pin to the exact commit or the version.
-        # uses: cross-the-world/ssh-scp-ssh-pipelines@e1c2bf0c8d7813a3243dc649b6af178262a834e9
-        uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.2
-        with:
-          # ssh remote host
-          host: ${{ secrets.SSH_REMOTE_HOST }}
-          # ssh remote port
-          port: ${{ secrets.SSH_REMOTE_PORT }} # optional, default is 22
-          # ssh remote user
-          user: ${{ secrets.SSH_REMOTE_USER }}
-          # content of ssh private key. ex raw content of ~/.ssh/id_rsa
-          # key: ${{ secrets.SSH_REMOTE_KEY }} # optional
-          # ssh remote password
-          pass: ${{ secrets.SSH_REMOTE_PASS }} # optional
-          # connection timeout to remote host
-          connect_timeout: 20s # optional, default is 30s
-          # execute pre-commands before scp
-          first_ssh: | # optional
-            rm -rdf $TEMP_FOLDER
-          # scp from local to remote
-          # scp: | # optional
-          # execute post-commands after scp
-          last_ssh: | # optional
-            mv -f $FOLDER $TEMP_FOLDER
-            mv -f $STAGING_FOLDER $FOLDER
-            mv -f $TEMP_FOLDER $STAGING_FOLDER
-            rm -rdf $TEMP_FOLDER
-
-      # - name: Testim CLI
+      # - name: ssh-scp-ssh-pipelines
       #   # You may pin to the exact commit or the version.
-      #   # uses: instinctstudios/testim-cli-gh-action@776599aa28d741b1a2e45ac6c7ec524a988dbbcf
-      #   uses: instinctstudios/testim-cli-gh-action@v0.6.0
+      #   # uses: cross-the-world/ssh-scp-ssh-pipelines@e1c2bf0c8d7813a3243dc649b6af178262a834e9
+      #   uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.2
       #   with:
-      #     # Testim auth token
-      #     token: ${{ secrets.TESTIMIO_TOKEN }}
-      #     # Project ID
-      #     project: ${{ secrets.TESTIMIO_PROJECT }}
-      #     # Grid to run the tests on
-      #     grid: ${{ secrets.TESTIMIO_GRIDNAME }} # default is Testim-Grid
-      #     # # ReportFile (To Be Validated)
-      #     # report-file: testim-report.xml
-      #     # # BaseURL (To Be Validated)
-      #     # base-url: https://${{ secrets.HOST_NAME }}
-      #     suite: 'All Tests --base-url https://${{ secrets.HOST_NAME }}'
+      #     # ssh remote host
+      #     host: ${{ secrets.SSH_REMOTE_HOST }}
+      #     # ssh remote port
+      #     port: ${{ secrets.SSH_REMOTE_PORT }} # optional, default is 22
+      #     # ssh remote user
+      #     user: ${{ secrets.SSH_REMOTE_USER }}
+      #     # content of ssh private key. ex raw content of ~/.ssh/id_rsa
+      #     # key: ${{ secrets.SSH_REMOTE_KEY }} # optional
+      #     # ssh remote password
+      #     pass: ${{ secrets.SSH_REMOTE_PASS }} # optional
+      #     # connection timeout to remote host
+      #     connect_timeout: 20s # optional, default is 30s
+      #     # execute pre-commands before scp
+      #     first_ssh: | # optional
+      #       rm -rdf $TEMP_FOLDER
+      #     # scp from local to remote
+      #     # scp: | # optional
+      #     # execute post-commands after scp
+      #     last_ssh: | # optional
+      #       mv -f $FOLDER $TEMP_FOLDER
+      #       mv -f $STAGING_FOLDER $FOLDER
+      #       mv -f $TEMP_FOLDER $STAGING_FOLDER
+      #       rm -rdf $TEMP_FOLDER
+
+      # # - name: Testim CLI
+      # #   # You may pin to the exact commit or the version.
+      # #   # uses: instinctstudios/testim-cli-gh-action@776599aa28d741b1a2e45ac6c7ec524a988dbbcf
+      # #   uses: instinctstudios/testim-cli-gh-action@v0.6.0
+      # #   with:
+      # #     # Testim auth token
+      # #     token: ${{ secrets.TESTIMIO_TOKEN }}
+      # #     # Project ID
+      # #     project: ${{ secrets.TESTIMIO_PROJECT }}
+      # #     # Grid to run the tests on
+      # #     grid: ${{ secrets.TESTIMIO_GRIDNAME }} # default is Testim-Grid
+      # #     # # ReportFile (To Be Validated)
+      # #     # report-file: testim-report.xml
+      # #     # # BaseURL (To Be Validated)
+      # #     # base-url: https://${{ secrets.HOST_NAME }}
+      # #     suite: 'All Tests --base-url https://${{ secrets.HOST_NAME }}'
 
       - name: Testim CLI
         run: |
             npm add @testim/testim-cli
-            testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
+            ./node_modules/.bin/testim --token $TESTIMIO_TOKEN --project $TESTIMIO_PROJECT --grid $TESTIMIO_GRIDNAME --report-file testim-report.xml --base-url $TESTIMIO_BASEURL
 
       - name: Publish Test Results
         if: always()
