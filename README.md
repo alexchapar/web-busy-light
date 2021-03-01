@@ -8,7 +8,7 @@
 [![W3C Validation - Staging](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F&label=w3c%20-%20staging)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F)
 
 [![GitHub deployments - Production](https://img.shields.io/github/deployments/alexchapar/web-busy-light/production?label=production)](https://github.com/alexchapar/web-busy-light/deployments/activity_log?environment=production)
-[![W3C Validation - Production](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fworkfromhome.capricehosting.com%2F&label=w3c%20-%20prod)](https://validator.w3.org/nu/?doc=https%3A%2F%2F.workfromhome.capricehosting.com%2F)
+[![W3C Validation - Production](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fworkfromhome.capricehosting.com%2F&label=w3c%20-%20prod)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fworkfromhome.capricehosting.com%2F)
 
 [![GitHub deployments - GitHubPages](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=github-pages)](https://alexchapar.github.io/web-busy-light/)
 
