@@ -13,9 +13,9 @@ It can help your child, your loved ones or any member of your team to know your 
 This project is a website that allows others to see your availability in a "busy light" approach. It is in fact a very simple web development with 5 possible states (color and emoji) :
 
 - green: Working but AVAILABLE
-- blue: QUICK, I work
+- blue: QUICK, I'm working
 - purple: My BRAIN is at work
-- red: I am in a MEETING
+- red: I'm on a MEETING
 - white: I DO NOT WORK
 
 ## Why
