@@ -8,6 +8,7 @@ on:
     paths-ignore:
     - '**/FUNDING.yml'
     - '.vscode/**'
+    - 'docs/**'
     - 'LICENSE'
     - 'README.md'
 
