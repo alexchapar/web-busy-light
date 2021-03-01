@@ -20,7 +20,7 @@ It can help your child, your loved ones or any member of your team to know your 
 
 ## Information
 
-This project is a website that allows others to see your availability in a "busy light" approach. It is in fact a very simple web development with 5 possible states (color and emoji) :
+This project is a website that allows others to see your availability in a "busy light" approach. It is in fact a very simple web development with 5 possible states (color and emoji):
 
 - green: Working but AVAILABLE
 - blue: QUICK, I'm working
@@ -47,7 +47,7 @@ When loading, the status will always be "Available" (green). You can change your
 
 ## Contribution
 
-You can submit issues or even create Pull Request if you want to propose new features ;)
+You can submit issues or even create Pull Request if you want to propose new features :wink:
 
 ## Some Thanks
 
