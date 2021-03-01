@@ -1,16 +1,16 @@
 # web-busy-light
 
 [![Website workfromhome.capricehosting.com](https://img.shields.io/website-up-down-green-red/https/workfromhome.capricehosting.com.svg)](https://workfromhome.capricehosting.com)
-![GitHub](https://img.shields.io/github/license/alexchapar/web-busy-light)
-![GitHub last commit](https://img.shields.io/github/last-commit/alexchapar/web-busy-light)
+[![GitHub](https://img.shields.io/github/license/alexchapar/web-busy-light)](https://github.com/alexchapar/web-busy-light/blob/master/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/alexchapar/web-busy-light/master)](https://github.com/alexchapar/web-busy-light/commits/master)
 
-![GitHub deployments - Staging](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=staging)
-![W3C Validation - Staging](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F&label=w3c%20-%20staging)
+[![GitHub deployments - Staging](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=staging)](https://github.com/alexchapar/web-busy-light/deployments/activity_log?environment=staging)
+[![W3C Validation - Staging](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F&label=w3c%20-%20staging)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F)
 
-![GitHub deployments - Production](https://img.shields.io/github/deployments/alexchapar/web-busy-light/production?label=production)
-![W3C Validation - Production](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fworkfromhome.capricehosting.com%2F&label=w3c%20-%20prod)
+[![GitHub deployments - Production](https://img.shields.io/github/deployments/alexchapar/web-busy-light/production?label=production)](https://github.com/alexchapar/web-busy-light/deployments/activity_log?environment=production)
+[![W3C Validation - Production](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fworkfromhome.capricehosting.com%2F&label=w3c%20-%20prod)](https://validator.w3.org/nu/?doc=https%3A%2F%2F.workfromhome.capricehosting.com%2F)
 
-![GitHub deployments - GitHubPages](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=github-pages)
+[![GitHub deployments - GitHubPages](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=github-pages)](https://alexchapar.github.io/web-busy-light/)
 
 ## Overview
 
