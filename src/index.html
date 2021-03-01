@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <!-- version : 0.1.0 -->
 <title>Am I Available ?</title>
@@ -11,287 +11,291 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
 
-<script>
-function resetAllStatus(){
-  hideStatus('available');
-  hideStatus('bequick');
-  hideStatus('brain');
-  hideStatus('meeting');
-  hideStatus('imhome');
-}
-function hideStatus(statusName) {
-  var x = document.getElementById(statusName);
-  x.style.display = "none";
-}
-function showMyStatusAs(statusName) {
-  closeMenu(); 
-  resetAllStatus();
-  
-  var x = document.getElementById(statusName);
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+<script type="text/javascript">
+  function resetAllStatus(){
+    hideStatus('available');
+    hideStatus('bequick');
+    hideStatus('brain');
+    hideStatus('meeting');
+    hideStatus('imhome');
+  }
+
+  function hideStatus(statusName) {
+    var x = document.getElementById(statusName);
     x.style.display = "none";
   }
-  
-  
-  var x = document.getElementById('main');
-  if (statusName === 'available') {
-	x.style.backgroundColor = '#00ff00';
-  } else if (statusName === 'bequick') {
-	x.style.backgroundColor = '#0000ff';
-  } else if (statusName === 'brain') {
-	x.style.backgroundColor = '#ff00ff';
-  } else if (statusName === 'meeting') {
-	x.style.backgroundColor = '#ff0000';
-  } else if (statusName === 'imhome') {
-	x.style.backgroundColor = '#ffffff';
-  } else {
-	x.style.backgroundColor = '#00ff00';
-  }
-  
-}
-function openMenu() {
-  document.getElementById("mySidebar").style.display = "block";
-}
 
-function closeMenu() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+  function showMyStatusAs(statusName) {
+    closeMenu();
+    resetAllStatus();
+
+    var x = document.getElementById(statusName);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById('main');
+    if (statusName === 'available') {
+    x.style.backgroundColor = '#00ff00';
+    } else if (statusName === 'bequick') {
+    x.style.backgroundColor = '#0000ff';
+    } else if (statusName === 'brain') {
+    x.style.backgroundColor = '#ff00ff';
+    } else if (statusName === 'meeting') {
+    x.style.backgroundColor = '#ff0000';
+    } else if (statusName === 'imhome') {
+    x.style.backgroundColor = '#ffffff';
+    } else {
+    x.style.backgroundColor = '#00ff00';
+    }
+
+  }
+
+  function openMenu() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function closeMenu() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
 </script>
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
 
-.sidenav {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  text-align: center;
-}
+<style type="text/css">
+  body {
+    font-family: "Lato", sans-serif;
 
-.sidenav a {
-  padding: 1em 0.5em;
-  margin-top: 0.5em;
-  text-decoration: none;
-  font-size: 3em;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: darkorange;
-}
-
-.available,
-#available {
-  background-color: #00ff00;
-  color: #000000;
-}
-.bequick,
-#bequick {
-  background-color: #0000ff;
-  color: #ffffff;
-}
-.brain,
-#brain {
-  background-color: #ff00ff;
-  color: #ffffff;
-}
-.meeting,
-#meeting {
-  background-color: #ff0000;
-  color: #ffffff;
-}
-.imhome,
-#imhome {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-#main {
-  min-height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin-left: -8px;
-  margin-top: -8px;
-  font-size: 28px;
-  padding: 0px 10px;
-  background-color: #00ff00;
-}
-
-#main img {
-  position: absolute;  
-  top: 0;  
-  bottom: 0;
-  left: 0;  
-  right: 0;
-  margin: auto;
-}
-
-.statusDescription {
-  position: inherit;
-  width: inherit;
-  min-height: inherit;
-  font-size: inherit;
-}
-.infoHowTo {
-  background-color: transparent;
-  color: #000000;
-  font-weight: bolder;
-  z-index:10;
-}
-.infoHowTo a {
-  color: #000000;
-}
-.topLeft {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-}
-.btmLeft {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-}
-.topRight {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}
-.btmRight {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-.xlarge {
-  font-size: 24px!important;
-}
-
-@media screen
-   and (orientation : portrait) {
- 
-  #main img {
-    height: 40%;
+    /* block user selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
   }
-}
-
-@media screen
-   and (orientation : landscape) {
-
-  #main img {
-    width: 40%;
-  }
-}
-
-@media screen 
-   and (max-height: 768px) {
 
   .sidenav {
-    padding-top: 0px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    text-align: center;
   }
-  .sidenav a {
-    font-size: 2.9em;
-	padding: 0.8em 0.4em;
-	margin-top: 0.2em;
-  }
-}
-
-@media screen 
-   and (max-width: 450px)   {
-
-  .sidenav {
-    padding-top: 0px;
-  }
-  .sidenav a {
-    font-size: 2.5em;
-	padding: 0.8em 0.4em;
-	margin-top: 0.2em;
-  }
-}
-
-@media screen 
-   and (max-height: 450px) {
 
   .sidenav a {
-    font-size: 1.5em;
-    padding: 0.4em 0.2em;
+    padding: 1em 0.5em;
+    margin-top: 0.5em;
+    text-decoration: none;
+    font-size: 3em;
+    display: block;
   }
-}
 
-@media screen
-   and (min-height: 450px)
-   and (max-height: 650px) {
-
-  .sidenav a {
-    font-size: 2em;
+  .sidenav a:hover {
+    color: darkorange;
   }
-}
 
-@media screen
-   and (max-width: 500px)
-   and (orientation: portrait) {
-   
+  .available,
+  #available {
+    background-color: #00ff00;
+    color: #000000;
+  }
+  .bequick,
+  #bequick {
+    background-color: #0000ff;
+    color: #ffffff;
+  }
+  .brain,
+  #brain {
+    background-color: #ff00ff;
+    color: #ffffff;
+  }
+  .meeting,
+  #meeting {
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+  .imhome,
+  #imhome {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  #main {
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: -8px;
+    margin-top: -8px;
+    font-size: 28px;
+    padding: 0px 10px;
+    background-color: #00ff00;
+  }
+
+  #main img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .statusDescription {
+    position: inherit;
+    width: inherit;
+    min-height: inherit;
+    font-size: inherit;
+  }
+  .infoHowTo {
+    background-color: transparent;
+    color: #000000;
+    font-weight: bolder;
+    z-index:10;
+  }
+  .infoHowTo a {
+    color: #000000;
+  }
   .topLeft {
-    top: 30px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  .btmLeft {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+  }
+  .topRight {
+    position: fixed;
+    top: 10px;
+    right: 10px;
   }
   .btmRight {
-    bottom: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
   }
-}
+  .xlarge {
+    font-size: 24px!important;
+  }
 
--webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
+  @media screen
+    and (orientation : portrait) {
 
+    #main img {
+      height: 40%;
+    }
+  }
+
+  @media screen
+    and (orientation : landscape) {
+
+    #main img {
+      width: 40%;
+    }
+  }
+
+  @media screen
+    and (max-height: 768px) {
+
+    .sidenav {
+      padding-top: 0px;
+    }
+    .sidenav a {
+      font-size: 2.9em;
+    padding: 0.8em 0.4em;
+    margin-top: 0.2em;
+    }
+  }
+
+  @media screen
+    and (max-width: 450px)   {
+
+    .sidenav {
+      padding-top: 0px;
+    }
+    .sidenav a {
+      font-size: 2.5em;
+    padding: 0.8em 0.4em;
+    margin-top: 0.2em;
+    }
+  }
+
+  @media screen
+    and (max-height: 450px) {
+
+    .sidenav a {
+      font-size: 1.5em;
+      padding: 0.4em 0.2em;
+    }
+  }
+
+  @media screen
+    and (min-height: 450px)
+    and (max-height: 650px) {
+
+    .sidenav a {
+      font-size: 2em;
+    }
+  }
+
+  @media screen
+    and (max-width: 500px)
+    and (orientation: portrait) {
+
+    .topLeft {
+      top: 30px;
+    }
+    .btmRight {
+      bottom: 30px;
+    }
+  }
 </style>
+
 </head>
-<body>
-  
-	<!-- Sidebar -->
-	<div class="sidenav" style="display:none" id="mySidebar">
-	  <a class="available" onclick="showMyStatusAs('available');" href="javascript:void(0);">AVAILABLE</a>
-	  <a class="bequick" onclick="showMyStatusAs('bequick');" href="javascript:void(0);">QUICK, I'm working</a>
-	  <a class="brain" onclick="showMyStatusAs('brain');" href="javascript:void(0);">My BRAIN is at work</a>
-	  <a class="meeting" onclick="showMyStatusAs('meeting');" href="javascript:void(0);">I'm on a MEETING</a>
-	  <a class="imhome" onclick="showMyStatusAs('imhome');" href="javascript:void(0);">I DO NOT WORK</a>
-	</div>
+  <body>
 
-	<div id="main" onclick="openMenu()">
-	
-		<!-- Availability Status -->
-		<!-- Emojis are from : https://openmoji.org/library/#group=smileys-emotion -->
-		<div id="available" class="statusDescription">
-			<img src="assets/available.png" alt="available">
-		</div>
-		<div id="bequick" class="statusDescription" style="display:none">
-			<img src="assets/bequick.png" alt="bequick">
-		</div>
-		<div id="brain" class="statusDescription" style="display:none">
-			<img src="assets/brain.png" alt="brain">
-		</div>
-		<div id="meeting" class="statusDescription" style="display:none">
-			<img src="assets/meeting.png" alt="meeting">
-		</div>
-		<div id="imhome" class="statusDescription" style="display:none">
-			<img src="assets/imhome.png" alt="imhome">
-		</div>
+    <!-- Sidebar -->
+    <div class="sidenav" style="display:none" id="mySidebar">
+      <a class="available" onclick="showMyStatusAs('available');" href="javascript:void(0);">AVAILABLE</a>
+      <a class="bequick" onclick="showMyStatusAs('bequick');" href="javascript:void(0);">QUICK, I'm working</a>
+      <a class="brain" onclick="showMyStatusAs('brain');" href="javascript:void(0);">My BRAIN is at work</a>
+      <a class="meeting" onclick="showMyStatusAs('meeting');" href="javascript:void(0);">I'm on a MEETING</a>
+      <a class="imhome" onclick="showMyStatusAs('imhome');" href="javascript:void(0);">I DO NOT WORK</a>
+    </div>
 
-	</div>
-	
-	<div class="infoHowTo topLeft xlarge">Update status...</div>
-	<div class="infoHowTo btmLeft">&copy; GitHub : <a href="https://github.com/alexchapar/web-busy-light" target="_blank">alexchapar/web-busy-light</a></div>
-	<div class="infoHowTo topRight">Please donate to <a href="https://www.fpwr.ca/donate/" target="_blank">Prader-Willi Syndrom</a></div>
-	<div class="infoHowTo btmRight xlarge">...click anywhere</div>
-</body>
-</html> 
+    <div id="main" onclick="openMenu()">
+
+      <!-- Availability Status -->
+      <!-- Emojis are from : https://openmoji.org/library/#group=smileys-emotion -->
+      <div id="available" class="statusDescription">
+        <img src="assets/available.png" alt="available">
+      </div>
+      <div id="bequick" class="statusDescription" style="display:none">
+        <img src="assets/bequick.png" alt="bequick">
+      </div>
+      <div id="brain" class="statusDescription" style="display:none">
+        <img src="assets/brain.png" alt="brain">
+      </div>
+      <div id="meeting" class="statusDescription" style="display:none">
+        <img src="assets/meeting.png" alt="meeting">
+      </div>
+      <div id="imhome" class="statusDescription" style="display:none">
+        <img src="assets/imhome.png" alt="imhome">
+      </div>
+
+    </div>
+
+    <div class="infoHowTo topLeft xlarge">Update status...</div>
+    <div class="infoHowTo btmLeft">&copy; GitHub : <a href="https://github.com/alexchapar/web-busy-light" target="_blank">alexchapar/web-busy-light</a></div>
+    <div class="infoHowTo topRight">Please donate to <a href="https://www.fpwr.ca/donate/" target="_blank">Prader-Willi Syndrom</a></div>
+    <div class="infoHowTo btmRight xlarge">...click anywhere</div>
+  </body>
+</html>
