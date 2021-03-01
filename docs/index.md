@@ -15,11 +15,11 @@
 
 A "busy light status" website
 
-It can help your child, your loved ones or any member of your team to know your availability (or your mood :smile:)
+It can help your child, your loved ones or any member of your team to know your availability (or your mood 😀)
 
 ## Information
 
-This project is a website that allows others to see your availability in a "busy light" approach. It is in fact a very simple web development with 5 possible states (color and emoji) :
+This project is a website that allows others to see your availability in a "busy light" approach. It is in fact a very simple web development with 5 possible states (color and emoji):
 
 - green: Working but AVAILABLE
 - blue: QUICK, I'm working
@@ -29,24 +29,24 @@ This project is a website that allows others to see your availability in a "busy
 
 ## Why
 
-With COVID-19, like many, I work from home. It's not easy for all our relatives to know if they can come and talk to us (or disturb us) during the day. And, let's face it, whenever our loved ones need us, it's during a SUPER IMPORTANT meeting with your Director :scream:. So I had to find a simple, visual and effective way.
+With COVID-19, like many, I work from home. It's not easy for all our relatives to know if they can come and talk to us (or disturb us) during the day. And, let's face it, whenever our loved ones need us, it's during a SUPER IMPORTANT meeting with your Director 😱. So I had to find a simple, visual and effective way.
 
 Searching on the web, I found several "features" that allowed me to give a "light status" based on my availability based on my status in "Microsoft Teams" (or any other similar tool).  I also found someone who presented how to build his own system with a RaspberryPi. It's very interesting for a Geek or a "Techno Guy"... But it costs money and, for some, we have less these days...
 
-As I had a lot of old obsolete devices (Windows Surface RT, Android phones, etc.) and they were in good shape, I thought I could give them a new use during this period by using their web browser :smirk:
+As I had a lot of old obsolete devices (Windows Surface RT, Android phones, etc.) and they were in good shape, I thought I could give them a new use during this period by using their web browser 😏
 
 ## How to use it
 
 You can use it in several ways:
 
-- To make it as simple as possible, I published the code under this URL [https://workfromhome.capricehosting.com](https://workfromhome.capricehosting.com) (using the "http" protocole is also available :wink:) and everyone can use it without any problem.
+- To make it as simple as possible, I published the code under this URL [https://workfromhome.capricehosting.com](https://workfromhome.capricehosting.com) (using the "http" protocole is also available 😉) and everyone can use it without any problem.
 - For those of you who want a better "control" or even make modifications, you can clone this repository and copy it to the place you want. The only condition for this to work is that your web browser must be able to run the html page.
 
 When loading, the status will always be "Available" (green). You can change your status manually by clicking on the screen and choosing one of the 5 states.
 
 ## Contribution
 
-You can submit issues or even create Pull Request if you want to propose new features ;)
+You can submit issues or even create Pull Request if you want to propose new features 😉
 
 ## Some Thanks
 
