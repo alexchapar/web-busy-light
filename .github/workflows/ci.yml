@@ -25,12 +25,22 @@ jobs:
 
       # Runs html validation from "https://github.com/svenkreiss/html5validator"
       - name: Html5 Validatior
+        id: validate
         uses: Cyb3r-Jak3/html5validator-action-experimental@v1
         with:
           root: src/
           format: xml
           log_level: DEBUG
           css: true
+
+      - name: Check outputs
+        run: |
+          if [[ "$VALID_OUT" -ne 0 ]]; then
+            echo "Validation step failed"
+            exit 1
+          fi
+        env:
+          VALID_OUT: ${{ steps.validate.outputs.result }}
 
       # Runs a set of commands using the runners shell
       - uses: actions/upload-artifact@v2
