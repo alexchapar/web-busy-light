@@ -25,7 +25,7 @@ jobs:
 
       # Runs html validation from "https://github.com/svenkreiss/html5validator"
       - name: Html5 Validatior
-        uses: Cyb3r-Jak3/html5validator-action@v0.4.4
+        uses: Cyb3r-Jak3/html5validator-action-experimental@v1
         with:
           root: src/
           format: xml
