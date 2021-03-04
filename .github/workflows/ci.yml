@@ -35,7 +35,7 @@ jobs:
 
       - name: Check outputs
         run: |
-          if [[ "$VALID_OUT" -ne 1 ]]; then
+          if [[ "$VALID_OUT" -ne 0 ]]; then
             echo "Validation step failed"
             exit 1
           fi
