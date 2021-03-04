@@ -30,7 +30,6 @@ jobs:
           root: src/
           format: xml
           log_level: debug
-          css: true
 
       # Runs a set of commands using the runners shell
       - uses: actions/upload-artifact@v2
