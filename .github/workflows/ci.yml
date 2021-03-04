@@ -28,8 +28,6 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action-experimental@v1
         with:
           root: src/
-          format: xml
-          log_level: debug
 
       # Runs a set of commands using the runners shell
       - uses: actions/upload-artifact@v2
