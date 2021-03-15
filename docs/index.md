@@ -1,5 +1,10 @@
+## Overview
 
-## Badges
+A "busy light status" website
+
+It can help your child, your loved ones or any member of your team to know your availability (or your mood 😀)
+
+### Project Status & Badges
 
 [![Website workfromhome.capricehosting.com](https://img.shields.io/website-up-down-green-red/https/workfromhome.capricehosting.com.svg?label=WebSite)](https://workfromhome.capricehosting.com)
 [![GitHub Page](https://img.shields.io/website-up-down-green-red/https/alexchapar.github.io/web-busy-light.svg?label=GitHub%20Page&logo=github)](https://alexchapar.github.io/web-busy-light)
@@ -16,17 +21,11 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/alexchapar/web-busy-light/master?logo=git&logoColor=white)](https://github.com/alexchapar/web-busy-light/commits/master)
 [![GitHub branch checks state](https://img.shields.io/github/checks-status/alexchapar/web-busy-light/master?label=status%20-%20master&logo=git&logoColor=white)](https://github.com/alexchapar/web-busy-light)
 
-[![VSCode](https://img.shields.io/badge/VS%20Code-success?logo=visual-studio-code&logoColor=white)](#)
-[![Html5 - Language](https://img.shields.io/badge/HTML-important?logo=html5&logoColor=white)](#)
-[![CSS3 - Language](https://img.shields.io/badge/CSS-informational?logo=css3&logoColor=white)](#)
-[![JS - Language](https://img.shields.io/badge/JS-yellow?logo=javascript&logoColor=white)](#)
+[![VSCode](https://img.shields.io/badge/VS%20Code-success?logo=visual-studio-code&logoColor=white)](https://github.com/alexchapar/web-busy-light)
+[![Html5 - Language](https://img.shields.io/badge/HTML-important?logo=html5&logoColor=white)](https://github.com/alexchapar/web-busy-light)
+[![CSS3 - Language](https://img.shields.io/badge/CSS-informational?logo=css3&logoColor=white)](https://github.com/alexchapar/web-busy-light)
+[![JS - Language](https://img.shields.io/badge/JS-yellow?logo=javascript&logoColor=white)](https://github.com/alexchapar/web-busy-light)
 [![GitHub](https://img.shields.io/github/license/alexchapar/web-busy-light)](https://github.com/alexchapar/web-busy-light/blob/master/LICENSE)
-
-## Overview
-
-A "busy light status" website
-
-It can help your child, your loved ones or any member of your team to know your availability (or your mood 😀)
 
 ## Information
 
