@@ -1,16 +1,7 @@
 # web-busy-light
 
-## Overview
-
-A "busy light status" website
-
-It can help your child, your loved ones or any member of your team to know your availability (or your mood :smile:)
-
-### Project Status & Badges
-
 [![Website workfromhome.capricehosting.com](https://img.shields.io/website-up-down-green-red/https/workfromhome.capricehosting.com.svg?label=WebSite)](https://workfromhome.capricehosting.com)
 [![GitHub Page](https://img.shields.io/website-up-down-green-red/https/alexchapar.github.io/web-busy-light.svg?label=GitHub%20Page&logo=github)](https://alexchapar.github.io/web-busy-light)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/alexchapar?logo=github-sponsors&logoColor=white)](#donations-sponsor)
 
 [![GitHub deployments - Staging](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=staging&logo=github-actions&logoColor=white)](https://github.com/alexchapar/web-busy-light/deployments/activity_log?environment=staging)
 [![W3C Validation - Staging](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F&label=staging&logo=w3c&logoColor=white)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F)
@@ -29,7 +20,13 @@ It can help your child, your loved ones or any member of your team to know your 
 [![JS - Language](https://img.shields.io/badge/JS-yellow?logo=javascript&logoColor=white)](https://github.com/alexchapar/web-busy-light)
 [![GitHub](https://img.shields.io/github/license/alexchapar/web-busy-light)](https://github.com/alexchapar/web-busy-light/blob/master/LICENSE)
 
-## Information
+## Overview
+
+A "busy light status" website
+
+It can help your child, your loved ones or any member of your team to know your availability (or your mood :smile:)
+
+## What is it
 
 This project is a website that allows others to see your availability in a "busy light" approach. It is in fact a very simple web development with 5 possible states (color and emoji):
 
