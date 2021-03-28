@@ -1,8 +1,8 @@
 # web-busy-light
 
 [![Website workfromhome.capricehosting.com](https://img.shields.io/website-up-down-green-red/https/workfromhome.capricehosting.com.svg?label=WebSite)](https://workfromhome.capricehosting.com)
-[![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Falexchapar%2Fupptime%2Fmaster%2Fapi%2Fweb-busy-light-demo%2Fuptime.json)](https://alexchapar.github.io/upptime)
-[![Response Time](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Falexchapar%2Fupptime%2Fmaster%2Fapi%2Fweb-busy-light-demo%2Fresponse-time.json)](https://alexchapar.github.io/upptime)
+[![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Falexchapar%2Fstatus-page%2Fmaster%2Fapi%2Fweb-busy-light-demo%2Fuptime.json)](https://alexchapar.github.io/status-page)
+[![Response Time](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Falexchapar%2Fstatus-page%2Fmaster%2Fapi%2Fweb-busy-light-demo%2Fresponse-time.json)](https://alexchapar.github.io/status-page)
 
 [![GitHub deployments - Staging](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=staging&logo=github-actions&logoColor=white)](https://github.com/alexchapar/web-busy-light/deployments/activity_log?environment=staging)
 [![W3C Validation - Staging](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F&label=staging&logo=w3c&logoColor=white)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F)
