@@ -1,7 +1,8 @@
 # web-busy-light
 
 [![Website workfromhome.capricehosting.com](https://img.shields.io/website-up-down-green-red/https/workfromhome.capricehosting.com.svg?label=WebSite)](https://workfromhome.capricehosting.com)
-[![GitHub Page](https://img.shields.io/website-up-down-green-red/https/alexchapar.github.io/web-busy-light.svg?label=GitHub%20Page&logo=github)](https://alexchapar.github.io/web-busy-light)
+[![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Falexchapar%2Fupptime%2Fmaster%2Fapi%2Fweb-busy-light-demo%2Fuptime.json)](https://alexchapar.github.io/upptime)
+[![Response Time](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Falexchapar%2Fupptime%2Fmaster%2Fapi%2Fweb-busy-light-demo%2Fresponse-time.json)](https://alexchapar.github.io/upptime)
 
 [![GitHub deployments - Staging](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=staging&logo=github-actions&logoColor=white)](https://github.com/alexchapar/web-busy-light/deployments/activity_log?environment=staging)
 [![W3C Validation - Staging](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F&label=staging&logo=w3c&logoColor=white)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstaging.workfromhome.capricehosting.com%2F)
@@ -10,6 +11,7 @@
 [![W3C Validation - Production](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fworkfromhome.capricehosting.com%2F&label=production&logo=w3c&logoColor=white)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fworkfromhome.capricehosting.com%2F)
 
 [![GitHub deployments - GitHubPages](https://img.shields.io/github/deployments/alexchapar/web-busy-light/staging?label=github-pages&logo=github-actions&logoColor=white)](https://alexchapar.github.io/web-busy-light/)
+[![GitHub Page](https://img.shields.io/website-up-down-green-red/https/alexchapar.github.io/web-busy-light.svg?label=GitHub%20Page&logo=github)](https://alexchapar.github.io/web-busy-light)
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/alexchapar/web-busy-light/master?logo=git&logoColor=white)](https://github.com/alexchapar/web-busy-light/commits/master)
 [![GitHub branch checks state](https://img.shields.io/github/checks-status/alexchapar/web-busy-light/master?label=status%20-%20master&logo=git&logoColor=white)](https://github.com/alexchapar/web-busy-light)
